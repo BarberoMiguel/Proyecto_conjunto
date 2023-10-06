@@ -1,6 +1,6 @@
 let formulario = document.querySelector('#formulario');
 formulario.addEventListener('submit', function(event) {
-    // event.preventDefault();
+    event.preventDefault();
 
     const usuario = event.target.usuario.value;
     const contrasena = event.target.contrasena.value;
@@ -19,6 +19,7 @@ formulario.addEventListener('submit', function(event) {
 
     if (mensaje != []) {
         let section = document.createElement('section');
+        section.setAttribute('id', 'mensajeProblemas');
         document.body.appendChild(section);
         for (i = 0; i < mensaje.length; i++) {
             let parr = document.createElement('p');
