@@ -10,3 +10,13 @@ fieldset{
     flex-direction: column;
     background-color: darksalmon;
 }
+
+label{
+    color: aquamarine;
+    font-size: larger;
+    font-family: sans-serif;
+}
+input{
+    size: auto;
+}
+
